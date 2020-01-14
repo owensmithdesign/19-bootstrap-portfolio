@@ -60,13 +60,13 @@
         <h1 class="display-4">Owen Smith</h1>
         <p class="lead">Marketing Professional, UX Designer, 
           Adventure Photographer and Videographer out of Atlanta, GA</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">View my work</a>
+        <a class="btn btn-primary btn-lg scrollButton" href="#" role="button">View my work</a>
       </div>
     </div>
     <!-- End jumbotron -->
     <!-- Cards -->
     <div class="container-fluid content">
-      <h2 class="sectionHeading">UX Case Studies</h2>
+      <h2 class="sectionHeading" id="caseStudyLocation">UX Case Studies</h2>
       <div class="row showsNear">
 
         <!-- Card 1 -->
@@ -76,7 +76,7 @@
             <div class="card-body">
               <h5 class="card-title">Treasure Maps</h5>
               <p class="card-text">A UX Case Study to create a travel application built for discovering unique places at home and abroad </p>
-              <a href="#" class="btn btn-primary">View Case Study</a>
+              <a href="#" class="btn btn-primary"><span>View Case Study</span></a>
             </div>
           </div>
         </div>
@@ -89,7 +89,7 @@
             <div class="card-body">
               <h5 class="card-title">Doctors for Global Health</h5>
               <p class="card-text">A UX Case Study to redesign a non-profit website to help raise money and awareness of their mission.</p>
-              <a href="#" class="btn btn-primary">View Case Study</a>
+              <a href="#" class="btn btn-primary"><span>View Case Study</span></a>
             </div>
           </div>
         </div>
@@ -102,7 +102,7 @@
             <div class="card-body">
               <h5 class="card-title">Magnetic Profile</h5>
               <p class="card-text">A UX Case Study to design an app that streamlines the job search process.</p>
-              <a href="#" class="btn btn-primary">View Case Study</a>
+              <a href="#" class="btn btn-primary"><span>View Gallery</span></a>
             </div>
           </div>
         </div>
@@ -110,15 +110,15 @@
         
           <h2 class="sectionHeading">Photography and Film</h2>
           
-        <!-- Card 4 -->
+        <!-- photography and film card -->
         <div class="cardContainer col-lg-12 col-md-12 col-sm-12">
-          <div class="card">
-              <div class="row showsNear">
+          <div class="card photoCard">
+              <!--<div class="row showsNear">-->
             <img src="images/IMG_3931-edited.jpg" class="card-img-top borderImage" alt="...">
             <div class="card-body">
               <h5 class="card-title">Gallery</h5>
               <p class="card-text">View my professional images and videos</p>
-              <a href="page2.html" class="btn btn-primary">View Gallery</a>
+              <a href="page2.html" class="btn btn-primary"> <span>View Gallery</span></a>
             </div>
           </div>
         </div>
@@ -127,7 +127,8 @@
     </div>
     <!-- End cards -->
     <!--tools and skills-->
-    <div class="skillsAndTools">
+
+    <div class="skillsAndTools col-lg-12 col-md-12 col-sm-12">
     <div class="skillsList">
     <h2 class="sectionHeading">Tools</h2>
     <ul class="list-group list-group-flush">
@@ -149,10 +150,11 @@
   </div>
 </div>
 <!--contact card-->
-      <div class="contactCard col-lg-12 col-md-12 col-sm-12 ">
+
+      <div class="contactCard">
         <div class = "contactLeft">
           <div id="contactImage">
-            <img src="images/newpic.jpg" class="rounded-circle col-lg-12 col-md-12 col-sm-12 img-fluid img-max"  alt="...">
+            <img src="images/newpic.jpg" class="rounded-circle img-fluid img-max"  alt="...">
           </div>
             <div class="card-body contactText text-center">
               <h5 class="card-title">Contact</h5>
@@ -170,7 +172,8 @@
           </div>
         </div>
       </div>
-        </div>
+    </div>
+  </div>
         <!--contact form-->
         <!--Section: Contact v.2-->
 <section class="mb-4">
@@ -184,7 +187,7 @@
   <div class="row">
 
       <!--Grid column-->
-      <div class="col-md-9 mb-md-0 mb-5">
+      <div class="col-md-12 mb-md-0 mb-5">
           <form id="contact-form" name="contact-form" action="mail.php" method="POST">
 
               <!--Grid row-->

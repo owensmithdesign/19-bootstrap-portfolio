@@ -3,7 +3,7 @@
     position: fixed;
     width: 100%;
     background-color: rgba(55, 58, 60, 0.897) !important;
-    background-size: cover;
+    /*background-size: cover;*/
     z-index: 10;
     color: white;
   }
@@ -31,6 +31,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 /* Jumbotron copy */
@@ -55,6 +56,7 @@
   text-align: center;
   margin: 0 auto;
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 .showsNear  {
   padding: 0px 30px 30px 30px;
@@ -63,10 +65,19 @@
   text-align: center;
   margin: 0 auto;
   padding-top: 10px;
+  
 }
-
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 .borderImage{
   border: 1px solid gray;
+}
+/*photo card*/
+.photoCard{
+  max-width: 600px;
+  display: block;
+  margin: 0 auto;
 }
 
 /* Content */
@@ -89,6 +100,9 @@
 }
 .skillsAndTools{
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
 }
 .skillsList{
   display: inline-block;
@@ -99,22 +113,35 @@
   padding-bottom: 10px;
   min-width: 250px;
 }
+@media (max-width: 700px){
+  .skillsAndTools{
+    display: block;
+  }
+}
+
+/*Contact Me*/
 
 .contactText{
   margin: 0 auto;
 }
-
+.contactLeft{
+  text-align: center;
+}
 .contactCard{
-  margin: 0 auto;
+  text-align: center;
   display: inline-block;
   min-width: 0;
   background-color: #ECEEEF;
+  max-width: 600px;
+  margin-left: 20%;
+  margin-right: 20%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .roundedCircle{
   max-width: 300px;
 }
 .img-max {
-  max-width: 300px;
+  max-width: 200px;
   margin: 0 auto;
   display: block;
   
@@ -151,16 +178,19 @@
 }
 
 .contactLeft{
-  width: 40%;
+  width: 100%;
   margin: 0 auto;
   float: left;
+  
   
 }
 
 .contactRight{
   text-align: left;
-  display: inline;
+  display: inline-block;
   vertical-align: middle;
+  padding-right:10px;
+  padding-left:10px;
   
 }
 @media (max-width: 700px){
@@ -175,16 +205,55 @@
   }
   
 }
-
+.nav-link{
+  border-bottom: 3px solid transparent;
+}
 .nav-link:hover{
-    background-color:#aaa;
+    border-bottom: 3px solid #aaa;
     color:white;
 }
 .nav-link:active{
-    background-color:#aaa;
+    border-bottom:#aaa;
     color:white;
 }
 .mb-4{
   margin: 0 auto;
-  padding-left: 20px;
+  padding-left: 20%;
+  padding-right: 20%;
+
+}
+
+.slidingPics{
+max-width: 600px;
+margin: 0 auto;
+
+}
+.d-block{
+  width: 100%;
+  border-radius: 10px;
+}
+/*button animation*/
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn:hover span {
+  padding-right: 25px;
+}
+
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
 }
